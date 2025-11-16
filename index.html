@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison de Fleur</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- 🌷 Navbar -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Maison <span>de Fleur</span></a>
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#produk">Produk</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i class='bx bx-search'></i></a>
+      <a href="#" id="shopping-cart"><i class='bx bx-cart'></i></a>
+      <a href="#" id="hamburger-menu"><i class='bx bx-menu'></i></a>
+    </div>
+
+    <!-- 🔍 Search Form -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="Cari bunga impianmu...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+  </nav>
+
+  <!-- 🛒 Cart Panel -->
+  <div class="cart-panel" id="cart-panel">
+    <div class="cart-header">
+      <h3>Keranjang Belanja</h3>
+      <i class="bx bx-x" id="close-cart"></i>
+    </div>
+    <div class="cart-items">
+      <p class="empty">Keranjang masih kosong 🌸</p>
+    </div>
+    <div class="cart-footer">
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- 🌸 Hero Section -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Bunga untuk <span>Setiap Momen Indah</span></h1>
+      <p>Maison de Fleur menghadirkan keindahan bunga yang membuat harimu lebih bermakna.</p>
+      <a href="#produk" class="cta">Belanja Sekarang</a>
+    </main>
+  </section>
+
+  <!-- 🌼 About Section -->
+  <section class="about" id="about">
+    <h2><span>About</span> Us</h2>
+    <div class="about-row">
+      <div class="about-img">
+        <img src="img/about.jpg" alt="Tentang Maison de Fleur" />
+      </div>
+      <div class="content">
+        <h3>Keindahan yang Tumbuh dari Setiap Kelopak</h3>
+        <p>Maison de Fleur adalah toko bunga yang menghadirkan pesona alam ke dalam setiap ruang.</p>
+        <p>Setiap rangkaian kami dirancang dengan penuh perhatian, menggunakan bunga segar pilihan dari petani lokal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌺 Produk Section -->
+  <section class="products" id="produk">
+    <h2><span>Our</span> Flowers</h2>
+    <div class="row">
+
+      <!-- Produk -->
+      <div class="product-card">
+        <div class="product-image"><img src="img/rose.jpg" alt="Rose Bouquet"></div>
+        <div class="product-content"><h3>Rose Bouquet</h3><div class="product-stars">★★★★★</div><div class="product-price">Rp250.000</div></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="img/tulip.jpg" alt="Tulip Basket"></div>
+        <div class="product-content"><h3>Tulip Basket</h3><div class="product-stars">★★★★★</div><div class="product-price">Rp300.000</div></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="img/matahari.jpg" alt="Sunshine Bouquet"></div>
+        <div class="product-content"><h3>Sunshine Bouquet</h3><div class="product-stars">★★★★★</div><div class="product-price">Rp280.000</div></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="img/peony.jpg" alt="Peony Dreams"></div>
+        <div class="product-content"><h3>Peony Dreams</h3><div class="product-stars">★★★★★</div><div class="product-price">Rp350.000</div></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="img/llily.jpg" alt="White Elegance"></div>
+        <div class="product-content"><h3>White Elegance</h3><div class="product-stars">★★★★★</div><div class="product-price">Rp270.000</div></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="img/lavnder.jpg" alt="Lavender Box"></div>
+        <div class="product-content"><h3>Lavender Box</h3><div class="product-stars">★★★★★</div><div class="product-price">Rp220.000</div></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="img/anggrek.jpg" alt="Orchid Grace"></div>
+        <div class="product-content"><h3>Orchid Grace</h3><div class="product-stars">★★★★★</div><div class="product-price">Rp320.000</div></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="img/blue serenity.jpg" alt="Blue Serenity"></div>
+        <div class="product-content"><h3>Blue Serenity</h3><div class="product-stars">★★★★★</div><div class="product-price">Rp330.000</div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 📩 Contact Section -->
+  <!-- 🌸 Contact Section -->
+<section id="kontak" class="contact">
+  <h2>Hubungi Kami</h2>
+  <p>Ingin pesan bunga atau tanya-tanya dulu? Kirim pesanmu di sini 💌</p>
+
+  <div class="contact-container">
+    <!-- Form Kontak -->
+    <form id="contactForm">
+      <input type="text" placeholder="Nama Lengkap" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="No. Telepon" required>
+      <textarea placeholder="Pesanmu..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <!-- Google Maps -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.815279400695!2d106.82695797498633!3d-6.161860495540366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c7b5aeb6b1%3A0x3a7f3c9b9d84a3c4!2sMaison%20de%20Fleur%20-%20Jakarta!5e0!3m2!1sid!2sid!4v1731349900000!5m2!1sid!2sid"
+        width="100%"
+        height="350"
+        style="border:0; border-radius:12px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Popup Notifikasi -->
+  <div id="notifPopup" class="notif-popup">
+    <p>Pesanmu berhasil dikirim 💐</p>
+  </div>
+</section>
+
+
+  <!-- 🌸 Modal Produk -->
+  <div class="modal" id="product-modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img src="img/rose.jpg" alt="Product Image" id="modal-img" />
+      <h3 id="modal-title">Rose Bouquet</h3>
+      <p id="modal-desc">Rangkaian mawar merah segar yang melambangkan cinta dan ketulusan.</p>
+      <div class="modal-price" id="modal-price">Rp250.000</div>
+      <button class="add-cart-btn">Tambahkan ke Keranjang</button>
+    </div>
+  </div>
+
+  <!-- 🌼 Footer -->
+  <footer class="footer">
+    <div class="footer-column">
+      <h3>Maison de Fleur</h3>
+      <p>Tempat bunga terbaik untuk mengungkapkan perasaanmu.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#produk">Our Flowers</a>
+      <a href="#about">About</a>
+      <a href="#kontak">Contact</a>
+    </div>
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <p>© 2025 <span>Maison de Fleur</span> | All Rights Reserved</p>
+  </div>
+
+  <!-- 🪷 Script Contact Validation -->
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("✅ Terima kasih! Pesan Anda telah terkirim.");
+    this.reset();
+  });
+  </script>
+
+  <!-- 🌸 Modal Produk Dinamis -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("product-modal");
+    const modalImg = document.getElementById("modal-img");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDesc = document.getElementById("modal-desc");
+    const modalPrice = document.getElementById("modal-price");
+    const closeBtn = document.querySelector(".close-btn");
+
+    const productData = {
+      "Rose Bouquet": { img: "img/rose.jpg", desc: "Rangkaian mawar merah segar melambangkan cinta sejati.", price: "Rp250.000" },
+      "Tulip Basket": { img: "img/tulip.jpg", desc: "Keranjang tulip cerah penuh warna.", price: "Rp300.000" },
+      "Sunshine Bouquet": { img: "img/matahari.jpg", desc: "Bunga matahari cerah pembawa semangat.", price: "Rp280.000" },
+      "Peony Dreams": { img: "img/peony.jpg", desc: "Peony lembut simbol cinta dan kemewahan.", price: "Rp350.000" },
+      "White Elegance": { img: "img/llily.jpg", desc: "Lily putih melambangkan kemurnian.", price: "Rp270.000" },
+      "Lavender Box": { img: "img/lavnder.jpg", desc: "Lavender harum menenangkan pikiran.", price: "Rp220.000" },
+      "Orchid Grace": { img: "img/anggrek.jpg", desc: "Anggrek elegan simbol keanggunan.", price: "Rp320.000" },
+      "Blue Serenity": { img: "img/blue serenity.jpg", desc: "Rangkaian biru tenang dan menawan.", price: "Rp330.000" }
+    };
+
+    document.querySelectorAll(".product-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const title = card.querySelector("h3").innerText.trim();
+        const data = productData[title];
+        if (data) {
+          modalImg.src = data.img;
+          modalTitle.textContent = title;
+          modalDesc.textContent = data.desc;
+          modalPrice.textContent = data.price;
+          modal.style.display = "flex";
+        }
+      });
+    });
+
+    closeBtn.addEventListener("click", () => modal.style.display = "none");
+    window.addEventListener("click", e => { if (e.target === modal) modal.style.display = "none"; });
+  });
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
