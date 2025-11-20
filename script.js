@@ -89,6 +89,7 @@ if (addCartBtn && cartItems) {
     const cartItem = document.createElement("div");
     cartItem.classList.add("cart-item");
     cartItem.innerHTML = `
+      <input type="checkbox" class="select-item" style="margin-right:10px;">
       <img src="${item.img}" alt="${item.title}">
       <div class="cart-info">
         <h4>${item.title}</h4>
@@ -145,3 +146,48 @@ if (contactForm && notifPopup) {
     contactForm.reset();
   });
 }
+
+// 🛍 OPEN CHECKOUT MODAL
+document.querySelector(".checkout-btn").addEventListener("click", () => {
+  document.getElementById("checkout-modal").style.display = "flex";
+});
+
+// 🛍 CLOSE CHECKOUT MODAL
+document.querySelector(".close-checkout").addEventListener("click", () => {
+  document.getElementById("checkout-modal").style.display = "none";
+});
+
+// 🛍 CLOSE WHEN CLICK OUTSIDE
+window.addEventListener("click", e => {
+  let modal = document.getElementById("checkout-modal");
+  if (e.target === modal) modal.style.display = "none";
+});
+
+// 🛍 FORM SUBMIT
+document.getElementById("checkoutForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Pesanan berhasil dibuat 💐 Kami akan menghubungimu segera!");
+  this.reset();
+});
+
+
+// =============================================
+// 🔥 FITUR BARU: PILIH PRODUK + HAPUS SETELAH CHECKOUT
+// =============================================
+const checkoutForm = document.getElementById("checkoutForm");
+
+checkoutForm.addEventListener("submit", function () {
+  const selectedItems = document.querySelectorAll(".select-item:checked");
+
+  selectedItems.forEach(item => {
+    const cartItem = item.closest(".cart-item");
+    cartItem.remove();
+  });
+
+  if (cartItems.children.length === 0) {
+    const emptyMessage = document.createElement("p");
+    emptyMessage.classList.add("empty");
+    emptyMessage.textContent = "Keranjang masih kosong 🌸";
+    cartItems.appendChild(emptyMessage);
+  }
+});
